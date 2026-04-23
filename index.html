@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" href = "calculator.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "calculator">
+        <input type = "text" id="display">
+
+    <div class = "row1">
+    <button onclick="addOne()">1</button>
+    <button onclick = "addTwo()">2</button>
+    <button onclick = "addThree()">3</button>
+    <button onclick = "addPlus()">+</button>
+
+  </div>
+
+   <div class = "row2">
+   <button onclick = "addFour()">4</button>
+<button onclick = "addFive()">5</button>
+<button onclick = "addSix()">6</button>
+<button onclick = "addMinus()">-</button>
+
+   </div>
+<div class = "row3">
+    <button onclick = "addSeven()">7</button>
+    <button onclick = "addEight()">8</button>
+    <button onclick = "addNine()">9</button>
+<button onclick = "addMultiply()">×</button>
+   
+</div>
+<div class = "row4">
+    <button onclick = "addZero()">0</button>
+    <button onclick = "clearDisplay()">C</button>
+    <button onclick = "calculate()">=</button>
+    <button onclick = "addDivide()">÷</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script>
+function addOne() {
+    let display = document.getElementById("display");
+    display.value += "1";
+}
+function addTwo(){
+    let display=  document.getElementById("display");
+    display.value += "2";
+}
+function addThree(){
+    let display = document.getElementById("display");
+    display.value += "3";
+}       
+function addPlus(){
+    let display = document.getElementById("display");
+    display.value += "+";
+}
+function addFour(){
+    let display = document.getElementById("display");
+    display.value += "4";
+}
+function addFive(){
+    let display = document.getElementById("display");
+    display.value += "5";
+}
+
+function addSix(){
+    let display = document.getElementById("display");
+    display.value += "6";
+}
+function addMinus(){
+    let display = document.getElementById("display");
+    display.value += "-";
+}
+function addSeven(){
+    let display = document.getElementById("display");
+    display.value += "7";
+}
+function addEight(){
+    let display = document.getElementById("display");
+    display.value += "8";
+}
+function addNine(){
+    let display = document.getElementById("display");
+    display.value += "9";
+}
+
+function addMultiply(){
+    let display = document.getElementById("display");
+    display.value += "*";
+}
+function addZero(){
+    let display = document.getElementById("display");
+    display.value += "0";
+}
+function clearDisplay(){
+    let display = document.getElementById("display");
+    display.value = "";
+}
+function addDivide(){
+    let display = document.getElementById("display");
+    display.value += "/";
+}
+function calculate(){
+    let display = document.getElementById("display");
+    try {
+        display.value = eval(display.value);
+    } catch (error) {
+        display.value = "Error";
+    }   
+}
+</script>
+</body>
+</html>
