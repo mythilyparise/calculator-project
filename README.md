@@ -8,4 +8,4 @@ A simple calculator built using HTML, CSS, and JavaScript.
 - Custom cursor
 
 ## Author
-Mythily
+Mythily Parise
